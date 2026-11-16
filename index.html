@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d1b">
+  <title>2D Transform Animation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="heading">
+      <p class="eyebrow">CSS MOTION PLAYGROUND</p>
+      <h1>2D Transform Animation</h1>
+      <p class="intro">Explore how translate, rotate, scale and skew transform an element.</p>
+    </header>
+
+    <section class="demo-grid" aria-label="2D transform examples">
+      <article class="demo-card">
+        <div class="preview">
+          <h2>Translate</h2>
+          <div class="scene"><div class="shape translate">Move</div></div>
+        </div>
+        <pre class="code"><code>.translate:hover {
+    transform: translate(60px, -30px);
+}</code></pre>
+      </article>
+
+      <article class="demo-card">
+        <div class="preview">
+          <h2>Rotate</h2>
+          <div class="scene"><div class="shape rotate">Spin</div></div>
+        </div>
+        <pre class="code"><code>.rotate:hover {
+    transform: rotate(360deg);
+}</code></pre>
+      </article>
+
+      <article class="demo-card">
+        <div class="preview">
+          <h2>Scale</h2>
+          <div class="scene"><div class="shape scale">Zoom</div></div>
+        </div>
+        <pre class="code"><code>.scale:hover {
+    transform: scale(1.5);
+}</code></pre>
+      </article>
+
+      <article class="demo-card">
+        <div class="preview">
+          <h2>Skew</h2>
+          <div class="scene"><div class="shape skew">Tilt</div></div>
+        </div>
+        <pre class="code"><code>.skew:hover {
+    transform: skew(15deg, 10deg);
+}</code></pre>
+      </article>
+
+      <article class="demo-card">
+        <div class="preview">
+          <h2>Combined</h2>
+          <div class="scene"><div class="shape combo">Mix</div></div>
+        </div>
+        <pre class="code"><code>.combo:hover {
+    transform: translateY(-30px)
+               rotate(15deg)
+               scale(1.2);
+}</code></pre>
+      </article>
+
+      <article class="demo-card">
+        <div class="preview">
+          <h2>Auto Animation</h2>
+          <div class="scene"><div class="shape auto">Auto</div></div>
+        </div>
+        <pre class="code"><code>.auto {
+    animation: spin 3s linear infinite;
+}</code></pre>
+      </article>
+    </section>
+    <p class="footer">Hover over each tile to preview the transform · Auto tile spins continuously</p>
+  </main>
+</body>
+</html>
